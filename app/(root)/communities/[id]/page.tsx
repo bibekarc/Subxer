@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { currentUser } from "@clerk/nextjs/server";
-
 import { communityTabs } from "@/constants";
-
 import UserCard from "@/components/cards/UserCard";
 import ThreadsTab from "@/components/shared/ThreadsTab";
 import ProfileHeader from "@/components/shared/ProfileHeader";
@@ -17,7 +15,7 @@ async function Page({ params }: { params: { id: string } }) {
   const communityDetails = await fetchCommunityDetails(params.id);
 
   return (
-    <section>
+    <section> 
       <ProfileHeader
         accountId={communityDetails.createdBy.id}
         authUserId={user.id}
