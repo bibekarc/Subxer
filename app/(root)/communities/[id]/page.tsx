@@ -15,7 +15,7 @@ async function Page({ params }: { params: { id: string } }) {
   const communityDetails = await fetchCommunityDetails(params.id);
 
   return (
-    <section> 
+    <section>
       <ProfileHeader
         accountId={communityDetails.createdBy.id}
         authUserId={user.id}
