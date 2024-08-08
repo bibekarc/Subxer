@@ -51,6 +51,7 @@ const LeftSidebar = () => {
       </div>
 
       <div className="mt-10 px-6">
+        <Link href='/sign-in'>
         <SignedIn>
           <SignOutButton>
             <div
@@ -67,6 +68,7 @@ const LeftSidebar = () => {
             </div>
           </SignOutButton>
         </SignedIn>
+        </Link>
       </div>
     </section>
   );

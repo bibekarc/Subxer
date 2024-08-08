@@ -21,6 +21,7 @@ function Topbar() {
           }}
         />
         <div className="block md:hidden">
+          <Link href='/sign-in'>
           <SignedIn>
             <SignOutButton>
               <div className="flex cursor-pointer -scale-x-100">
@@ -33,6 +34,7 @@ function Topbar() {
               </div>
             </SignOutButton>
           </SignedIn>
+          </Link>
         </div>
       </div>
     </nav>
