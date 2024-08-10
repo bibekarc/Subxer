@@ -6,8 +6,8 @@ import Link from "next/link";
 function Topbar() {
   return (
     <nav className="topbar">
-      <Link href="/sign-up" className="flex items-center gap-4">
-        <Image src="/assets/logo.svg" alt="logo" width={28} height={28} />
+      <Link href="/sign-up" className="flex items-center">
+        <Image src="/assets/logob.png" alt="logo" width={72} height={72} />
         <p className="text-heading3-bold text-light-1 max-xs:hidden">Subxer</p>
       </Link>
 
@@ -21,19 +21,19 @@ function Topbar() {
           }}
         />
         <div className="block md:hidden">
-          <Link href='/sign-in'>
-          <SignedIn>
-            <SignOutButton>
-              <div className="flex cursor-pointer -scale-x-100">
-                <Image
-                  src="/assets/logout.svg"
-                  alt="logout"
-                  width={24}
-                  height={24}
-                />
-              </div>
-            </SignOutButton>
-          </SignedIn>
+          <Link href="/sign-in">
+            <SignedIn>
+              <SignOutButton>
+                <div className="flex cursor-pointer -scale-x-100">
+                  <Image
+                    src="/assets/logout.svg"
+                    alt="logout"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+              </SignOutButton>
+            </SignedIn>
           </Link>
         </div>
       </div>
